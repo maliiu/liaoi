@@ -1,0 +1,31 @@
+{
+  "name": "@chat/ui",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "build": "tsc -p tsconfig.build.json",
+    "clean": "rimraf dist",
+    "dev": "tsc -w",
+    "lint": "eslint src --ext .ts,.tsx --config ../configs/eslint/base.cjs",
+    "format": "prettier --write \"src/**/*.{ts,tsx}\"",
+    "test": "echo \"No tests for shared UI yet\""
+  },
+  "peerDependencies": {
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.8",
+    "@types/react-dom": "^18.3.0",
+    "eslint": "^8.57.1",
+    "prettier": "^3.3.3",
+    "rimraf": "^5.0.10",
+    "typescript": "^5.6.3"
+  }
+}

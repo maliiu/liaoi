@@ -1,0 +1,6 @@
+{
+  "name": "@chat/configs",
+  "version": "0.0.1",
+  "private": true,
+  "main": "eslint/base.cjs"
+}
